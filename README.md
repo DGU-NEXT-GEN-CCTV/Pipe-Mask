@@ -46,12 +46,25 @@ pip install ultralytics
 ```
 .
 ├── data
-│   ├── input           : 원본 동영상 디렉토리
-│   ├── working         : 작업 디렉토리
-│   └── output          : 마스킹된 동영상 디렉토리
-├── model               : 모델 가중치 디렉토리
-└── run.py              : 메인 코드
+│   ├── input                  : 원본 동영상 디렉토리
+│   ├── working                : 작업 디렉토리
+│   │   ├── {video name}       : 개별 동영상 작업 디렉토리
+│   │   │   ├── frames         : 동영상에서 추출된 프레임 이미지
+│   │   │   ├── masked_frames  : 사람에 대해 마스킹이 적용된 이미지
+│   │   │   └── segs           : 프레임 세그멘테이션 결과
+│   │   ...
+│   └── output                 : 마스킹된 동영상 디렉토리
+├── model                      : 모델 가중치 디렉토리
+└── run.py                     : 메인 코드
 ```
+
+## Preparation
+
+이 모듈을 통해 마스킹 및 분리할 동영상 파일을 준비합니다. (`.mp4`, `.avi`, `.mov` 확장자의 동영상을 지원합니다.)
+
+준비된 동영상을 `data/input` 디렉토리에 위치시킵니다.
+
+모듈 실행 시, 데이터 처리에 필요한 디렉토리는 자동으로 생성됩니다. (`data/working`, `data/output`과 하위 디렉토리)
 
 ## Run
 
@@ -60,3 +73,14 @@ pip install ultralytics
 ```bash
 python run.py
 ```
+
+## Example
+
+### Input Video
+
+![demo_input](resource/demo.gif)
+
+### Output Video
+
+![demo_output_1](resource/demo_result_0.gif)
+![demo_output_2](resource/demo_result_1.gif)
