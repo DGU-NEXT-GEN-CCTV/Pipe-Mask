@@ -82,5 +82,5 @@ python run.py
 
 ### Output Video
 
-![demo_output_1](resource/demo_result_0.gif)
-![demo_output_2](resource/demo_result_1.gif)
+![demo_output_1](resource/demo_0.gif)
+![demo_output_2](resource/demo_1.gif)
