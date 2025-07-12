@@ -76,11 +76,6 @@ python run.py
 
 ## Example
 
-### Input Video
-
-![demo_input](resource/demo.gif)
-
-### Output Video
-
-![demo_output_1](resource/demo_0.gif)
-![demo_output_2](resource/demo_1.gif)
+| Input Video                  | Output Video (#1)                     | Output Video (#2)                     |
+| ---------------------------- | ------------------------------------- | ------------------------------------- |
+| ![demo](resource/demo.gif) | ![demo_output_1](resource/demo_0.gif) | ![demo_output_2](resource/demo_1.gif) |
