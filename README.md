@@ -31,7 +31,7 @@ conda activate ngc-pipe-mask
 **Step 2**. 라이브러리 설치
 
 ```bash
-pip install ultralytics
+pip install -r requirements.txt
 ```
 
 **Step 3**. 모델 가중치 다운로드
@@ -76,6 +76,6 @@ python run.py
 
 ## Example
 
-| Input Video                  | Output Video (#1)                     | Output Video (#2)                     |
-| ---------------------------- | ------------------------------------- | ------------------------------------- |
+| Input Video                | Output Video (#1)                     | Output Video (#2)                     |
+| -------------------------- | ------------------------------------- | ------------------------------------- |
 | ![demo](resource/demo.gif) | ![demo_output_1](resource/demo_0.gif) | ![demo_output_2](resource/demo_1.gif) |
